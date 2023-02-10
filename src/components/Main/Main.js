@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <main style={{ backgroundImage: `url(${background})` }}>
       {animals.map((animal) => (
-        <Animal key={animal.name} />
+        <Animal key={animal.name} {...animal} />
       ))}
     </main>
   );
